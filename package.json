@@ -1,0 +1,13 @@
+{
+  "name": "expgrunt",
+  "main": "index.js",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-express-server": "^0.5.1"
+  },
+  "dependencies": {
+    "express": "^4.12.4",
+    "vash": "^0.8.7"
+  }
+}
