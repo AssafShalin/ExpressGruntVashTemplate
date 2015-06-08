@@ -1,19 +1,15 @@
 module.exports = function (grunt) {
 
 	grunt.initConfig({
-		watch: {
-			files: ['*.js'],
-			tasks: ['express']
-		},
-		
-		express: {
-			prod: {
+		nodemon: {
+			all: {
+				script: 'index.js',
 				options: {
-					script: 'index.js'				}
+					watchedExtensions: ['js']
+				}
 			}
 		}
 	});
-	grunt.loadNpmTasks('grunt-express-server');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.registerTask('default', 'watch');
+	grunt.loadNpmTasks('grunt-nodemon');
+	grunt.registerTask('default', 'nodemon');
 };

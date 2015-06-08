@@ -6,7 +6,7 @@ app.set('view engine', 'vash');
 app.use(express.static(__dirname + '/static'));
 
 app.get('/', function (req, res) {
-	console.log('HTTP!!');
+	console.log('HTTP');
 	res.send('Hello World');
 });
 
